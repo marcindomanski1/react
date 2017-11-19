@@ -1,4 +1,5 @@
 import React from 'react';
+import {Button} from 'react-bootstrap';
 
 const Home = () => {
     const handleClick = () => {
@@ -6,7 +7,7 @@ const Home = () => {
     };
 
     return (<div>
-            <button onClick={handleClick}>Button</button>
+            <Button bsStyle="primary" onClick={handleClick}>Button</Button>
         </div>
     );
 };
