@@ -8,23 +8,21 @@ import Dashboard from './Dashbaord';
 import {
     BrowserRouter as Router,
     Route,
-    Link
 } from 'react-router-dom';
 
 const App = () => {
     return (
         <Router>
             <div>
+
                 <Header/>
-                <ul>
-                    <li><Link to="/">Home</Link></li>
-                    <li><Link to="/profile">Profile</Link></li>
-                    <li><Link to="/dashboard">Dashboard</Link></li>
-                </ul>
+
                 <Route exact path="/" component={Home}/>
                 <Route path="/profile" component={Profile}/>
                 <Route path="/dashboard" component={Dashboard}/>
-            <Footer/>
+
+                <Footer/>
+
             </div>
         </Router>
     );

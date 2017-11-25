@@ -15,15 +15,10 @@ const Home = () => {
         </Grid>
     );
 
-    return (<div>
+    return (
+        <div>
             {gridInstance}
             <Button bsStyle="primary" bsSize="large" onClick={handleClick}>Button</Button>
-           {/* <Grid>
-                <Row>
-                    <Col xs={12} md={8}>Column 1</Col>
-                    <Col xs={6} md={4}>Column 2</Col>
-                </Row>
-            </Grid>*/}
             <form>
                 <FormGroup>
                     <ControlLabel>Label</ControlLabel>
@@ -42,8 +37,6 @@ const Home = () => {
             </form>
         </div>
     );
-
-
 };
 
 export default Home;

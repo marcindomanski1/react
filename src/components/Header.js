@@ -8,12 +8,13 @@ const logoStyle = {
 };
 
 const Header = () => {
-    return (<div className="header">
-        <h1>Header</h1>
-        {/*<img className="logo" src={logo}/>*/}
-        <img style={logoStyle} src={logo}/>
-        <Menu/>
-    </div>);
+    return (
+        <div className="header">
+            <h1>Header</h1>
+            <img style={logoStyle} src={logo}/>
+            <Menu/>
+        </div>
+    );
 };
 
 export default Header;
